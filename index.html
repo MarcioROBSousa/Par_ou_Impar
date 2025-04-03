@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function verificarParOuImpar() {
+         let numero = prompt("Digite qulaquer número: ");
+       
+
+            if (numero === null || numero.trim() === '') {
+                alert("Você não digitou um numero válido")
+            } else {
+                if (numero % 2 == 0) { // % significa 'resto'. neste caso, todo numero divisível por 2 e o resto for 0//
+                    alert("Número par!")
+                } else {
+                    alert("Número ímpar!")
+                }
+            }
+        }
+
+    </script>
+   
+</body>
+    <h1>Digite o número</h1>
+    <button onclick="verificarParOuImpar()">clique aqui para digitar seu numero</button>
+</html>
